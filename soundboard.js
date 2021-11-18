@@ -1,24 +1,15 @@
-const sounds = ["success", "hmm", "electronic"];
 
-sounds. forEach((sound) => {
-    const btn = document.createElement("button");
-    btn.classList.add("btn");
-    
-    btn.innerText = sound;
-
-    btn.addEventListener('click', ()=>{
-        stopSongs();
-        document.getElementById(sound).onplay();
-    });
-
-    document.getElementById("buttons").appendChild(btn);
-});
-
-function stopSongs(){
-    sounds.forEach((sound) => {
-        const song = document.getElementById(sound);
-
-        song.onpause();
-        song.currentTime = 0;
-    });
+var buttonElementSuccess = document.getElementById('success');
+buttonElementSuccess.onclick = function (){
+    buttonElementSuccess.play('success.mp3');
 }
+
+var buttonElementHmm = document.getElementById('hmm');
+buttonElementHmm.onclick = function () {
+    buttonElementHmm.play('hmm.mp3');
+};
+
+var buttonElementElectronic = document.getElementById('electronic');
+buttonElementElectronic.onclick = function () {
+    buttonElementElectronic.play('electronic.mp3');
+};
