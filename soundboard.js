@@ -1,15 +1,14 @@
+function play1() {
+    var success = document.getElementById("success");
+    audio1.play();
+  }
 
-var buttonElementSuccess = document.getElementById('success');
-buttonElementSuccess.onclick = function (){
-    buttonElementSuccess.play('success.mp3');
-}
+  function play2() {
+    var hmm = document.getElementById("hmm");
+    audio2.play();
+  }
 
-var buttonElementHmm = document.getElementById('hmm');
-buttonElementHmm.onclick = function () {
-    buttonElementHmm.play('hmm.mp3');
-};
-
-var buttonElementElectronic = document.getElementById('electronic');
-buttonElementElectronic.onclick = function () {
-    buttonElementElectronic.play('electronic.mp3');
-};
+  function play3() {
+    var electronic = document.getElementById("electronic");
+    audio3.play();
+  }
