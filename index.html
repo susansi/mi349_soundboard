@@ -13,14 +13,17 @@
 <h1>Soundboard</h1>
 
 <div id="buttons">
-    <input type="button" value="sucess" onclick="play1()">
-    <input type="button" value="hmm" onclick="play2()">
-    <input type="button" value="electronic" onclick="play3()">
+    <button type="button" id="success">success
+        <audio id="success" src="sounds/success.mp3"></audio>
+    </button>
+    <button type="button" id="hmm">hmm
+        <audio id="hmm" src="sounds/hmm.mp3"></audio>
+    </button>
+    <button type="button" id="electronic">electronic
+        <audio id="electronic" src="sounds/electronic.mp3"></audio>
+    </button>
 
 </div>
-<audio id="success" src="sounds/success.mp3"></audio>
-<audio id="hmm" src="sounds/hmm.mp3"></audio>
-<audio id="electronic" src="sounds/electronic.mp3"></audio>
 
  <script src="soundboard.js"></script>
 </body>
